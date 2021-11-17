@@ -1,0 +1,26 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <p id="id">{{place.id}}</p>
+        <h5 class="card-title">{{place.name}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Location: <span
+                id="longitud">{{place.location.coordinates.[0]}}</span></h6>
+        <h6 class="card-subtitle mb-2 text-muted">Location: <span id="latitud">{{place.location.coordinates.[1]}}</span>
+        </h6>
+        <p class="card-text">{{place.type}}</p>
+        <a href="/lugares/editar/{{place._id}}">
+            Editar
+        </a>
+        </br>
+        <a href="/lugares/borrar/{{place._id}}">
+            Delete
+        </a>
+        </br>
+    </div>
+
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/js/detalles.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABCp6qzvgu9zpOrtrlgG9p8wt0Rh6bkuA&callback=initMap"></script>

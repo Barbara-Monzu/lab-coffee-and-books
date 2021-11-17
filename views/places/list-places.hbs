@@ -1,0 +1,42 @@
+<h1>Listado de Lugares</h1>
+<hr>
+<ul>
+  {{#each allPlaces}}
+      <li>{{name}} en {{location.coordinates}} es un {{type}}</li>
+    <a href="/lugares/editar/{{_id}}">
+      Editar
+    </a>
+    </br>
+    <a href="/lugares/borrar/{{_id}}">
+      Delete
+    </a>
+    </br>
+    <a href="/lugares/detalles/{{_id}}">
+      Ver detalles
+    </a>
+
+  {{/each}}
+</ul>
+
+
+{{!-- Botón de borrar! --}}
+
+
+
+{{!-- <a href="/movies/{{id}}/edit">Edit Movie</a>
+
+    <form action="/movies/{{id}}/delete" method="POST">
+  <label for="">Title:</label>
+  <input value="{{title}}" type="text" name="title">
+
+  <label for="">Genre:</label>
+  <input value="{{genre}}" type="text" name="genre">
+
+  <label for="">Plot:</label>
+  <input value="{{plot}}" type="text" name="plot">
+
+  <label for="">Cast:</label>
+  <input value="{{cast}}" type="text" name="cast">
+
+  <button type="submit">Delete</button>
+</form> --}}

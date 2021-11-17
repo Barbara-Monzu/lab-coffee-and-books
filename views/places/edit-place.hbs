@@ -1,0 +1,23 @@
+<h1>Editar Lugar </h1>
+
+<form action="/lugares/editar/{{id}}" method="POST">
+  <label for="title">
+    Name
+    <input value="{{name}}" name="name" id="title" type="text">
+  </label>
+  </br>
+
+  <label for="">Location
+    <input type="text" name="latitude" id="latitude" placeholder="Latitude" value="{{ location.coordinates.[1]}}">
+    <input type="text" name="longitude" id="longitude" placeholder="Longitude" value="{{location.coordinates.[0]}}">
+    </label>
+  </br>
+
+  <label for="">
+    Type <input value="{{type}}" name="type" type="text">
+  </label>
+
+  </br>
+
+  <button type="submit">Editar lugar</button>
+</form>
