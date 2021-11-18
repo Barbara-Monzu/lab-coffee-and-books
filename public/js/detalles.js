@@ -1,29 +1,7 @@
 
-const placeLatitud = document.querySelector("#latitud").innerHTML
-const placeLongitud = document.querySelector("#longitud").innerHTML
+const placeLatitud = document.getElementById("latitud").value
+const placeLongitud = document.getElementById("longitud").value
 
-// function initMap() {
-
-//     const centerLocation = {
-//         lat: placeLatitud,
-//         lng: placeLongitud
-//     };
-
-//     console.log(centerLocation)
-
-//     const map = new google.maps.Map(document.getElementById('map'), {
-//         zoom: 13,
-//         center: centerLocation
-//     });
-
-//     let center = {
-//         lat: undefined,
-//         lng: undefined
-//     };
-
-//     //createMarker(map)
-
-// }
 
 function createMarker(map, centerLocation) {
 
@@ -33,7 +11,6 @@ function createMarker(map, centerLocation) {
     });
 }
 
-// initMap()
 
 function initMap() {
 
